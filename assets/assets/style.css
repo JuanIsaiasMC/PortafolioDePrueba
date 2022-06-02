@@ -791,42 +791,10 @@ span{
     margin-bottom: 50px;
 }
 
-.contenedor{
-    position: relative;
-    width: 500px;
-    
-}
-
-.info{
-    color: var(--magenta-oscuro);
-    padding: 30px;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    line-height: 2rem;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 500ms ease-out;
-}
-
-.info__p{
-    padding-top: 130px;
-}
-
-.contenedor:hover > .info{
-    background-color: rgba(229, 229, 229, 0.5);
-    opacity: 1;
-    visibility: visible;
-}
-
 
 
 .img-portafolio{
-    width: 100%;
+    width: 600px;
     border-bottom: none;
     border: 8px var(--naranja-puro) solid;
     border-bottom: none;
