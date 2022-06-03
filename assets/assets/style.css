@@ -698,6 +698,7 @@ span{
 /* Mis habilidades */
 
 .div-habilidades{
+    background-color: var(--midnight-expresss);
     background-image: none;
     background-repeat: no-repeat;
     background-position: -50px 100px;
