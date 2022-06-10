@@ -1,5 +1,5 @@
 :root{
-    --naranja-puro:rgb(241, 166, 0);
+    --naranja-puro:#f1a600;
     --magenta-oscuro: #1f1d2c;
     --midnight-expresss: #242635;
     --gray-90: rgb(229, 229, 229);
@@ -298,9 +298,7 @@ body.scroll{
 /* Mis habilidades */
 
 .div-habilidades{
-    background-image: url(./Vectores/Rectangle\ 34-1.svg);
-    background-repeat: no-repeat;
-    background-position: -50px 100px;
+    background-color: var(--midnight-expresss);
     padding: var(--padding);
     padding-top: 50px;
     display: grid;
@@ -462,12 +460,16 @@ body.scroll{
 
 @media screen and (min-width:775px) {
     /* NAVBAR */
+    body{
+        overflow-x: hidden;
+    }
     .nav{
-        width: 70%;
+        align-items: flex-end;
+        width: 100vw;
         height: auto;
-        position: relative;
-        right: 0;
-        padding: 20px 0;
+        position: inherit;
+        right: inherit;
+        padding: 20px;
 
     }
     
@@ -486,23 +488,24 @@ body.scroll{
     }
     
     .nav__menu{
+        background-color:aqua;
         display: flex;
         flex-direction: row;
         justify-content: space-between ;
-        position: relative;
-        left: 0;
-        top: 0;
-        width: 100%;
+        position: inherit;
+        left: inherit;
+        top: inherit;
+        width: 60%;
         height: auto;
         align-items: inherit;
         background-color: inherit;
         overflow-y: inherit;
-        line-height: normal;
-        z-index: 2;
+        line-height: inherit;
+        z-index: 0;
         transition: none;
-        text-align: center;
-        padding:var(--padding2);
-        /* background-color:var(--magenta-oscuro); */
+        text-align: inherit;
+        padding:inherit;
+        pointer-events: all;
         
     }
     
@@ -521,15 +524,19 @@ body.scroll{
     .ul__img{
         display: none;
     }
-     
+    .nav__menu li{
+        margin: 0 1rem;
+        text-align: center;
+    }
     .menu-opcion{
-        padding: 20px;
+        padding: inherit;
         font-size: 16px;
         color: var(--white);
     }
     
     .menu-opcion:hover{
         color: var(--naranja-puro);
+        transition: all 0.3s ease-in;
     }
 
 /* HEADER */
@@ -567,6 +574,8 @@ body.scroll{
 .header__div{
     width: 300px;
     z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .div-img{
