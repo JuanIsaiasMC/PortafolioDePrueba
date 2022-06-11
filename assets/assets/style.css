@@ -27,6 +27,7 @@ body{
 }
 
 a{
+    color: inherit;
     text-decoration: none;
 }
 
@@ -169,6 +170,20 @@ body.scroll{
     width: 250px;
 }
 
+.button-cv{
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    padding: 1rem;
+    background-color: var(--naranja-puro);
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.button-cv:hover{
+    background-color: var(--white);
+    color: var(--naranja-puro);
+}
 /* Acerca de mi */
 
 .div{
