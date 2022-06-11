@@ -173,7 +173,7 @@ body.scroll{
 .button-div{
     width: 300px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .button-cv{
     position: relative;
@@ -560,6 +560,14 @@ body.scroll{
     .menu-opcion:hover{
         color: var(--naranja-puro);
         transition: all 0.3s ease-in;
+    }
+
+    .button-div{
+        justify-content: center;
+    }
+
+    .button-cv{
+        width: 210px;
     }
 
 /* HEADER */
