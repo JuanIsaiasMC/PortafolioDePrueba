@@ -170,7 +170,14 @@ body.scroll{
     width: 250px;
 }
 
+.button-div{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
 .button-cv{
+    position: relative;
+    z-index: 1;
     cursor: pointer;
     border: none;
     border-radius: 25px;
@@ -178,6 +185,7 @@ body.scroll{
     background-color: var(--naranja-puro);
     color: var(--white);
     transition: all 0.3s ease;
+
 }
 
 .button-cv:hover{
