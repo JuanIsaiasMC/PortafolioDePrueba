@@ -464,8 +464,8 @@ body.scroll{
         overflow-x: hidden;
     }
     .nav{
-        align-items: flex-end;
-        width: 100vw;
+        justify-content: inherit;
+        width: 100%;
         height: auto;
         position: inherit;
         right: inherit;
