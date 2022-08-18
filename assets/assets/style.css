@@ -294,7 +294,7 @@ body.scroll {
     align-items: center;
     justify-content: space-between;
     margin: .7rem;
-    width: 60%;
+    width: 90%;
 }
 
 .container__icon {
@@ -322,7 +322,7 @@ body.scroll {
 }
 
 .habilidades__h3 {
-    margin: .7rem;
+    margin: 1.5rem;
     position: relative;
 }
 
