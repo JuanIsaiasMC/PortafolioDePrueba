@@ -46,6 +46,11 @@ img {
     display: block;
 }
 
+input,
+textarea {
+    text-align: center;
+}
+
 
 /* MOBILE FIRST APARTIR DE 375 PIXELES * 552 PIXELES */
 
@@ -86,7 +91,7 @@ body.scroll {
     top: 0;
     background-color: var(--midnight-expresss);
     overflow-y: auto;
-    line-height: 4rem;
+    line-height: 5rem;
     z-index: 2;
     transition: all 0.4s;
     pointer-events: none;
@@ -350,7 +355,7 @@ body.scroll {
 
 
 
-/* Mi portafilio */
+/* Mis poryectos */
 
 
 .section__proyectos {
@@ -358,7 +363,6 @@ body.scroll {
     text-align: center;
     /* carrusel */
     width: 100%;
-    /* padding: 1rem; */
     overflow: hidden;
 
 }
@@ -372,7 +376,7 @@ body.scroll {
     width: 500%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     transition: all .5s ease-in-out;
     transform: translateX(0%);
@@ -402,10 +406,11 @@ body.scroll {
 .img__container {
     position: relative;
     width: calc(100% / 5);
-    height: 70vh;
+    background-color: blue;
+    /* height: 50vh; */
     text-align: center;
     overflow: hidden;
-    margin: 1rem;
+    margin: 3rem;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -413,9 +418,9 @@ body.scroll {
 
 .proyectos__img {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
-    border-top: 3px solid var(--naranja-puro);
+    border-top: 4px solid var(--naranja-puro);
 }
 
 .hover {
@@ -447,43 +452,158 @@ body.scroll {
 
 /* Contacto */
 .footer {
-    background-color: var(--midnight-expresss);
-    padding: 20px;
-    margin-top: 50px;
+    padding-top: 2rem;
     text-align: center;
 }
 
-.footer__h2 {
-    font-size: 32px;
-    font-weight: 600;
-}
 
-.footer-div {
-    height: 200px;
+.form {}
+
+.form__container {
+    padding: 0.5rem;
+    text-align: center;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    row-gap: 1rem;
 }
 
-.footer__img {
-    width: 100px;
+.form__title {
+    margin-bottom: 1.5rem;
 }
 
-.footer__img-position {
-    align-self: flex-end;
+.form__input {
+    padding: .8rem;
+    outline: none;
+    border: var(--naranja-puro) solid 3px;
+    border-radius: .5rem;
 }
 
-
-.footer__p {
-    font-size: 18px;
-    font-weight: 600;
+.form__textarea {
+    resize: none;
+    padding: 2rem .8rem;
+    margin-bottom: .5rem;
 }
 
-.footer__span {
-    font-size: 16px;
-    font-weight: 400;
+.form__submit {
+    background-color: var(--naranja-puro);
+    padding: .5rem 0rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    color: var(--white);
+    outline: none;
+    border: var(--white) 2px solid;
 }
 
+/* Version 500px */
 
-/* Version DESKTOP */
+@media screen and (min-width: 500px) {
+    body {
+        background-color: rebeccapurple;
+        padding: 1rem 2.5rem;
+    }
 
-/*  */
+    /* navbar */
+    .nav__menu {
+        padding: 1.5rem 3rem;
+    }
+
+    /* header */
+
+    .header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        row-gap: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .header__div-img {
+        height: 9 0%;
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        right: 0%;
+
+    }
+
+    .div__img-profile {
+        height: 100%;
+        object-fit: contain;
+
+    }
+
+    /* acercda de mi  */
+
+
+    .icono__academlo {
+        width: 7rem;
+        align-self: center;
+    }
+
+    /* habilidades */
+
+    .container__icon {
+        width: 5rem;
+        height: 5rem;
+        object-fit: contain;
+    }
+
+
+    /* mis proyectos */
+
+    .img__container {
+        height: 65vh;
+        margin: 1.5rem;
+
+    }
+
+    .proyectos__img {
+        height: 100vh;
+    }
+
+
+    /* Contacto */
+
+
+    .form__container {
+        row-gap: 1.5rem;
+    }
+
+    .form__title {
+        margin-bottom: 2rem;
+    }
+
+    .form__input {
+        padding: .8rem;
+        outline: none;
+        border: var(--naranja-puro) solid 3px;
+        border-radius: .5rem;
+    }
+
+    .form__textarea {
+        resize: none;
+        padding: 2rem .8rem;
+        margin-bottom: .5rem;
+    }
+
+    .form__submit {
+        background-color: var(--naranja-puro);
+        padding: 1rem 0rem;
+        cursor: pointer;
+        border-radius: .5rem;
+        color: var(--white);
+
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: red;
+        padding: 1.5rem 3.5rem;
+    }
+
+
+}

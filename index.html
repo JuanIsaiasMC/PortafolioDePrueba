@@ -224,19 +224,17 @@
 
   <!-- contacto -->
   <footer class="footer" id="Contacto">
-    <h2 class="footer__h2">Contacto</h2>
-    <div class="footer-div">
-      <div class="footer__div">
-        <img src="./assets/assets/iconos/phone 3.svg" alt="phone menu" class="footer__img" />
-        <p class="footer__p">Numero celular</p>
-        <span class="footer__span">9842152131</span>
+    <h2 class="form__title">
+      Contactame
+    </h2>
+    <form class="form" action="https://formspree.io/f/xdojorlw" method="POST">
+      <div class="form__container">
+        <input required placeholder="Nombre" type="text" class="form__input" name="name">
+        <input required placeholder="Email" type="email" class="form__input" name="email">
+        <textarea placeholder="Mensaje" class="form__input form__textarea" name="message"></textarea>
+        <input type="submit" value="Enviar" class="form__submit">
       </div>
-      <div class="footer__div footer__img-position">
-        <img src="./assets/assets/iconos/mail 3.svg" alt="mail menu" class="footer__img" />
-        <p class="footer__p">Email</p>
-        <span class="footer__span">isaias.meza.conde@gmail.com</span>
-      </div>
-    </div>
+    </form>
   </footer>
   <script src="./main.js"></script>
 </body>

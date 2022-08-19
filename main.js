@@ -1,11 +1,18 @@
+// botones del menu mobile y solucion del scroll del body
 const desableScroll = document.querySelector('body')
 const navToogle = document.querySelector('.nav__toogle')
 const navMenu = document.querySelector('.nav__menu')
 const hideLinks = document.querySelectorAll('.nav__menu a[href^="#"]')
 const closeMenu = document.querySelector('.ul__button')
 
+// carrusel
 const proyectosContainer = document.querySelector('.proyectos__container')
 const botonesProyectos = document.querySelectorAll('.botones')
+
+//  formulario 
+
+const form = document.querySelector('.form')
+const botonForm = document.querySelector('.form__submit')
 
 navToogle.addEventListener('click', () => {
     navMenu.classList.toggle('nav__menu-visible')
@@ -42,4 +49,22 @@ botonesProyectos.forEach((boton, i) => {
 })
 
 
+form.addEventListener('submit', handleSubmit)
+
+async function handleSubmit(e) {
+    e.preventDefault()
+    const form = new FormData(this)
+    const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+            'Accept': 'aplication/json'
+        }
+    })
+
+    if (response.ok) {
+        alert('Gracias por contactarme')
+        location.reload()
+    }
+}
 
