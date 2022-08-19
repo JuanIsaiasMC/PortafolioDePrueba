@@ -42,6 +42,14 @@ span {
     color: var(--gray-90);
 }
 
+img {
+    display: block;
+}
+
+
+/* MOBILE FIRST APARTIR DE 375 PIXELES * 552 PIXELES */
+
+
 /* barra de navegacion */
 
 body.scroll {
@@ -343,48 +351,99 @@ body.scroll {
 
 
 /* Mi portafilio */
-.div-portafolio {
-    padding: var(--padding);
-    padding-top: 50px;
-    background-color: #242635;
-}
 
-.h2-portafolio {
+
+.section__proyectos {
+    padding-bottom: 1.5rem;
     text-align: center;
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-
-.img-portafolio {
-    width: 300px;
-    border-bottom: none;
-    border: 8px var(--naranja-puro) solid;
-    border-bottom: none;
-    border-top: 16px var(--naranja-puro) solid;
+    /* carrusel */
+    width: 100%;
+    /* padding: 1rem; */
+    overflow: hidden;
 
 }
 
-
-.p-portafolio {
-    font-size: 18px;
-    font-weight: 600;
+.proyectos__title {
+    padding: 2rem;
 }
 
+.proyectos__container {
+    /* div grande */
+    width: 500%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    transform: translateX(0%);
+}
 
-.portafolio-div {
-    padding: var(--padding);
+.botones__proyectos {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones {
+    background-color: var(--naranja-puro);
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+
+}
+
+.botones.activo {
+    background-color: var(--white);
+}
+
+.img__container {
+    position: relative;
+    width: calc(100% / 5);
+    height: 70vh;
+    text-align: center;
+    overflow: hidden;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.proyectos__img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    border-top: 3px solid var(--naranja-puro);
+}
+
+.hover {
+    background-color: #f1a600;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    background-color: #242635;
-    ;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .4s ease-in-out;
+    row-gap: 2rem;
+
 }
 
-.img-position {
-    align-self: flex-end;
+.img__container:hover .hover {
+    width: 100%;
+    /* height: 100%; */
 }
+
+.proyectos__text {}
+
+.proyectos__info {}
+
+
 
 /* Contacto */
 .footer {
@@ -426,3 +485,5 @@ body.scroll {
 
 
 /* Version DESKTOP */
+
+/*  */
