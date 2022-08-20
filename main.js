@@ -34,6 +34,8 @@ closeMenu.addEventListener('click', () => {
 })
 
 
+// 768
+
 botonesProyectos.forEach((boton, i) => {
     botonesProyectos[i].addEventListener('click', () => {
         let posicion = i
@@ -45,6 +47,7 @@ botonesProyectos.forEach((boton, i) => {
             botonesProyectos[i].classList.remove('activo')
         })
         botonesProyectos[i].classList.add('activo')
+
     })
 })
 
@@ -68,3 +71,10 @@ async function handleSubmit(e) {
     }
 }
 
+
+
+window.addEventListener("resize", function () {
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        proyectosContainer.style.transform = `translateX(${-0}%)`
+    }
+})
