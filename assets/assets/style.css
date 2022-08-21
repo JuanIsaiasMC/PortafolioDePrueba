@@ -204,7 +204,7 @@ body.scroll {
     position: relative;
     z-index: 1;
     cursor: pointer;
-    border: var(--white 2px solid);
+    border: solid 2px var(--white);
     border-radius: 25px;
     padding: 1rem;
     background-color: var(--naranja-puro);
@@ -364,7 +364,6 @@ body.scroll {
     /* carrusel */
     width: 100%;
     overflow: hidden;
-    background-color: yellow;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -377,7 +376,6 @@ body.scroll {
 }
 
 .proyectos {
-    background-color: red;
     width: 80%;
     overflow: hidden;
 }
@@ -396,7 +394,6 @@ body.scroll {
 
 
 .img__container {
-    background-color: violet;
     position: relative;
     width: calc(100% / 5);
     text-align: center;
@@ -440,22 +437,24 @@ body.scroll {
 
 .hover {
     background-color: #f1a600;
-    width: 0%;
+    width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
+    left: -100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     overflow: hidden;
     transition: .4s ease-in-out;
-    row-gap: 2rem;
+    /* row-gap: 2rem; */
+    padding: 2rem;
 
 }
 
 .img__container:hover .hover {
-    width: 100%;
+    left: 0%;
     /* height: 100%; */
 }
 
@@ -513,7 +512,6 @@ body.scroll {
 
 @media screen and (min-width: 500px) {
     body {
-        background-color: rebeccapurple;
         padding: 1rem 2.5rem;
     }
 
@@ -574,7 +572,6 @@ body.scroll {
         /* carrusel */
         width: 100%;
         overflow: hidden;
-        background-color: yellow;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -587,7 +584,7 @@ body.scroll {
     }
 
     .proyectos {
-        background-color: red;
+
         width: 80%;
         overflow: hidden;
     }
@@ -606,7 +603,7 @@ body.scroll {
 
 
     .img__container {
-        background-color: violet;
+
         position: relative;
         width: calc(100% / 5);
         text-align: center;
@@ -662,7 +659,6 @@ body.scroll {
 
 @media screen and (min-width: 600px) {
     body {
-        background-color: green;
         padding: 2rem 3.5rem;
     }
 
@@ -732,7 +728,6 @@ body.scroll {
         /* carrusel */
         width: 100%;
         overflow: hidden;
-        background-color: yellow;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -745,7 +740,6 @@ body.scroll {
     }
 
     .proyectos {
-        background-color: red;
         width: 70%;
         overflow: hidden;
     }
@@ -764,7 +758,6 @@ body.scroll {
 
 
     .img__container {
-        background-color: violet;
         position: relative;
         width: calc(100% / 5);
         text-align: center;
@@ -784,12 +777,10 @@ body.scroll {
     }
 
     /* Contacto */
-    .footer {
-        background-color: grey;
-    }
+    .footer {}
 
     .form__container {
-        background-color: brown;
+
         row-gap: 1.5rem;
         width: 80%;
         margin: 0 auto;
@@ -843,7 +834,6 @@ body.scroll {
         display: block;
         justify-content: inherit;
         align-items: inherit;
-
     }
 
     .nav__toogle {
@@ -866,6 +856,7 @@ body.scroll {
         transition: all 0.4s;
         pointer-events: visible;
         padding: 1rem;
+        background-color: var(--magenta-oscuro);
 
     }
 
@@ -1015,7 +1006,7 @@ body.scroll {
         padding: 0.5rem;
         column-gap: 1rem;
         row-gap: 3rem;
-        background-color: red;
+
     }
 
     .div__div {
@@ -1023,7 +1014,7 @@ body.scroll {
         display: flex;
         flex-direction: column;
         row-gap: 1rem;
-        background-color: green;
+
     }
 
     .icono__academlo {
@@ -1138,7 +1129,7 @@ body.scroll {
         text-align: center;
         width: 100%;
         overflow: hidden;
-        background-color: yellow;
+
         display: block;
         flex-direction: column;
         justify-content: center;
@@ -1153,7 +1144,7 @@ body.scroll {
 
     .proyectos {
         /* carrusel */
-        background-color: red;
+
         /* width: 80%; */
         width: 100%;
         overflow: inherit;
@@ -1162,10 +1153,10 @@ body.scroll {
     .proyectos__container {
         /* div grande */
         padding: 1.5rem;
-        background-color: teal;
+
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
         gap: 1.5rem;
         flex-direction: inherit;
         flex-flow: inherit;
@@ -1178,7 +1169,7 @@ body.scroll {
 
 
     .img__container {
-        background-color: violet;
+
         position: relative;
         /* width: calc(100% / 5); */
         width: 100%;
@@ -1189,7 +1180,6 @@ body.scroll {
         justify-content: center;
         text-align: center;
         border-radius: .5rem;
-        border-top: 4px solid var(--naranja-puro);
 
         -webkit-box-shadow: 10px 14px 6px 0px rgba(0, 0, 0, 0.4);
         -moz-box-shadow: 10px 14px 6px 0px rgba(0, 0, 0, 0.4);
@@ -1202,6 +1192,7 @@ body.scroll {
         object-fit: contain;
         border-top: inherit;
         border-radius: 1rem;
+        border-top: 4px solid var(--naranja-puro);
     }
 
     .botones__proyectos {
@@ -1214,8 +1205,8 @@ body.scroll {
 
     .hover {
         background-color: #f1a600;
-        width: 0%;
-        height: 100%;
+        width: 100%;
+        /* height: 100vh; */
         position: absolute;
         top: 0;
         display: flex;
@@ -1224,13 +1215,16 @@ body.scroll {
         align-items: center;
         overflow: hidden;
         transition: .4s ease-in-out;
-        row-gap: 2rem;
+        row-gap: 3rem;
+
+        padding: 1.5rem;
 
     }
 
     .img__container:hover .hover {
         width: 100%;
         /* height: 100%; */
+        /* padding: 1rem; */
     }
 
     .proyectos__text {}
@@ -1255,7 +1249,7 @@ body.scroll {
         flex-direction: column;
         row-gap: 1rem;
         width: 60%;
-        background-color: red;
+
     }
 
     .form__title {
@@ -1290,9 +1284,218 @@ body.scroll {
 
 @media screen and (min-width: 1024px) {
     body {
-        background-color: darkgreen;
+
         color: var(--white);
         padding: 0 8rem;
+    }
+
+
+    /* header */
+
+    .header__div-img {
+        height: 90%;
+    }
+
+
+
+
+    /* Acerca de mi */
+
+    .icono__academlo {
+        width: 40%;
+        align-self: center;
+    }
+
+    .div__img-p {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .div__div-p {
+        font-size: 1rem;
+    }
+
+    .div__span {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #f1a600;
+    }
+
+
+    /* Mis habilidades */
+
+    .habilidades__container {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        padding: 0.5rem;
+        row-gap: 1rem;
+    }
+
+    .habilidades {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .habilidad__tecnica {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: .5rem;
+        width: 90%;
+
+    }
+
+    .habilidades__info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+
+    }
+
+    .container__icon {
+        width: 8rem;
+        height: 8rem;
+        object-fit: contain;
+    }
+
+    .tecnica__icon {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Mis poryectos */
+
+
+    .section__proyectos {
+        padding-bottom: 1.5rem;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .proyectos__title {
+        padding: 2rem;
+        font-size: 3rem;
+    }
+
+    .proyectos {
+
+        width: 100%;
+        overflow: inherit;
+    }
+
+    .proyectos__container {
+        /* div grande */
+        padding: 1.5rem;
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        gap: 1.5rem;
+        flex-direction: inherit;
+        flex-flow: inherit;
+        justify-content: inherit;
+        align-items: inherit;
+        transition: all .5s ease-in-out;
+        transform: translateX(0%);
+    }
+
+
+
+    .img__container {
+
+        position: relative;
+        /* width: calc(100% / 5); */
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        margin: 0;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        border-radius: .5rem;
+
+        -webkit-box-shadow: 10px 14px 6px 0px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 10px 14px 6px 0px rgba(0, 0, 0, 0.4);
+        box-shadow: 10px 14px 6px 0px rgba(0, 0, 0, 0.4);
+    }
+
+    .proyectos__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-top: inherit;
+        border-radius: 1rem;
+        border-top: 4px solid var(--naranja-puro);
+    }
+
+    .botones__proyectos {
+        display: none;
+
+    }
+
+
+
+    /* Contacto */
+    .footer {
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+
+    .form {}
+
+    .form__container {
+        padding: 0.5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        width: 60%;
+
+    }
+
+    .form__title {
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+    }
+
+    .form__input {
+        padding: .8rem;
+        outline: none;
+        border: var(--naranja-puro) solid 3px;
+        border-radius: .5rem;
+    }
+
+    .form__textarea {
+        resize: none;
+        padding: 2rem .8rem;
+        margin-bottom: .5rem;
+    }
+
+    .form__submit {
+        background-color: var(--naranja-puro);
+        padding: .5rem 0rem;
+        cursor: pointer;
+        border-radius: .5rem;
+        color: var(--white);
+        outline: none;
+        border: var(--white) 2px solid;
     }
 
 }
