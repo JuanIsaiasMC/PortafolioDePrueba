@@ -18,6 +18,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 55.2px;
 
 }
 
@@ -65,6 +66,10 @@ body.scroll {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    background-color: red;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .nav__toogle {
