@@ -453,7 +453,7 @@ body.scroll {
     overflow: hidden;
     transition: .4s ease-in-out;
     row-gap: 2rem;
-    padding: 2rem;
+    /* padding: 2rem; */
 
 }
 
@@ -1414,7 +1414,7 @@ body.scroll {
 
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
         gap: 1.5rem;
         flex-direction: inherit;
         flex-flow: inherit;
@@ -1442,6 +1442,7 @@ body.scroll {
         -webkit-box-shadow: 10px 14px 6px 0px rgba(0, 0, 0, 0.4);
         -moz-box-shadow: 10px 14px 6px 0px rgba(0, 0, 0, 0.4);
         box-shadow: 10px 14px 6px 0px rgba(0, 0, 0, 0.4);
+
     }
 
     .proyectos__img {
@@ -1451,6 +1452,7 @@ body.scroll {
         border-top: inherit;
         border-radius: 1rem;
         border-top: 4px solid var(--naranja-puro);
+
     }
 
     .botones__proyectos {
